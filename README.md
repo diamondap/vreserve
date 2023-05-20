@@ -12,7 +12,7 @@ Running out of disk space was a major problem in this system because the
 services could not coordinate disk usage. The disk often filled up, and
 all the services got stuck.
 
-Enter core.
+Enter vreserve.
 
 ## What does it do?
 
@@ -42,8 +42,6 @@ vreserve originally ran as a service, with requests coming in over a TCP
 or HTTP/REST connection from other services. Since vreserve keeps all its
 data in memory, it's important to have only one instance running.
 
-The code in this repo includes only the vreserve core, not the service
-layer. But it should be easy to wrap in Go's http server library.
 
 ## Building
 
